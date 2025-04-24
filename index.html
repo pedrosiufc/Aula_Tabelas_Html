@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    th, td{
+        border: 1px solid black;
+    }
+    tfoot{
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <thead> <!--cabeçalho-->
+            <tr> <!--linha-->
+                <th>Produto</th> <!--colunas-->
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black friday</th>
+            </tr>
+        </thead>
+
+        <!-- na tag td pode-se utlizar colspan="2" e rowspan="2" para
+        expandir colunas e linhas -->
+        
+        <tbody> <!--corpo dos dados-->
+            <tr>
+                <td>Camiseta</td> <!--dados-->
+                <td>2</td> <!--dados-->
+                <td>5$</td> <!--dados-->
+                <td rowspan="2">Sim</td> <!--dados-->
+            </tr>
+            <tr>
+                <td>Calção</td> <!--dados-->
+                <td>5</td> <!--dados-->
+                <td>10$</td> <!--dados-->
+                
+            </tr>
+            <tr>
+                <td>Calça Jeans</td> <!--dados-->
+                <td>3</td> <!--dados-->
+                <td>15$</td> <!--dados-->
+                <td>Não</td> <!--dados-->
+            </tr>
+        </tbody>
+        <tfoot> <!--rodapé da tabela-->
+            <tr>
+                <td colspan="3">Total</td>
+                <td>30$</td>
+
+            </tr>
+        </tfoot> 
+    </table>
+</body>
+</html>
